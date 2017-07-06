@@ -1,7 +1,7 @@
 000100170225     H option(*nodebugio) dftactgrp(*no) actgrp(*new)
 000200170225     FDATEMATHD cf   e             workstn
 000300170225
-000400170225      *  ASCII art panel for heading. (Use a Figlet generator.)
+000400170707      *  ASCII art panel for heading. (Use a Figlet generator.) xxxx
 000500170225     D FIGLET          ds
 000600170225     D*Figar                         60    dim(6) ctdata perrcd(1)
 000700170225      * Constants

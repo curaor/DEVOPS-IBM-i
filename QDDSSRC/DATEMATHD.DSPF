@@ -1,50 +1,50 @@
-000120170225     A*%%EC
-000121170710     A* DevOps Demo
-000130170225     A                                      DSPSIZ(24 80 *DS3)
-000140170225     A                                      CHGINPDFT(HI UL)
-000150170225     A                                      ERRSFL
-000160170225     A                                      CA03
-000170170225     A                                      CF04
-000180170225     A                                      MOUBTN(*ULD ENTER)
-000190170225     A          R FMT01
-000210170225     A                                      RTNCSRLOC(&REC &FLD)
-000220170225     A            REC           10A  H
-000230170225     A            FLD           10A  H
-000240170225     A            DATEUSA        8A  O  2 70
-000250170225     A            TIMEUSA        8A  O  3 70
-000260170225     A                                  4 70USER
-000270170225     A                                  8 14'      Date Math Demo      '
-000280170225     A                                      COLOR(TRQ)
-000290170225     A                                      DSPATR(UL)
-000300170225     A                                 10 14'Date:         '
-000310170225     A            DAT             L  B 10 29COLOR(WHT)
-000320170225     A                                      DATFMT(*JOB)
-000330170225     A            DATEF4         4A  B 10 40DSPATR(PR)
-000340170225     A                                      COLOR(BLU)
-000350170225     A                                      DFTVAL('(F4)')
-000360170225     A                                 11 14'Day of week:  '
-000370170225     A            DOWEEK         9A  O 11 29COLOR(WHT)
-000380170225     A                                 12 14'Day of Year:  '
-000390170225     A            JDAY            L  O 12 29COLOR(WHT)
-000400170225     A                                      DATFMT(*JUL)
-000410170225     A                                 13 14'End-of-month: '
-000420170225     A            EOM             L  O 13 29COLOR(WHT)
-000430170225     A                                      DATFMT(*JOB)
-000440170225     A                                 14 14'Last Friday:  '
-000450170225     A            LASTFRI         L  O 14 29COLOR(WHT)
-000460170225     A                                      DATFMT(*JOB)
-000470170225     A                                 15 14'Next Tuesday: '
-000480170225     A            NEXTTUE         L  O 15 29COLOR(WHT)
-000490170225     A                                      DATFMT(*JOB)
-000500170225     A            ADDDAYS        5Y 0B 16 19EDTCDE(N)
-000510170225     A            ADDSUB          L  O 16 30COLOR(WHT)
-000520170225     A                                      DATFMT(*JOB)
-000530170225     A                                 16 41'Add/Sub days:'
-000540170225     A                                 10 54'Century Date:'
-000550170225     A            CDAY          10A  O 10 68COLOR(WHT)
-000560170225     A                                 11 54'Regular Date:'
-000570170225     A            REGDATE       10A  O 11 68COLOR(WHT)
-000580170225     A                                 23  3'F3=Exit'
-000590170225     A                                      COLOR(BLU)
-000600170225     A                                 23 13'F4=Pop-up Calendar'
-000610170225     A                                      COLOR(BLU)
+     A* demo 1
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CHGINPDFT(HI UL)
+     A                                      ERRSFL
+     A                                      CA03
+     A                                      CF04
+     A                                      MOUBTN(*ULD ENTER)
+     A          R FMT01
+     A*%%TS  SD  20170225  001003  MSODC       REL-V7R1M0  5770-WDS
+     A                                      RTNCSRLOC(&REC &FLD)
+     A            REC           10A  H
+     A            FLD           10A  H
+     A            DATEUSA        8A  O  2 70
+     A            TIMEUSA        8A  O  3 70
+     A                                  4 70USER
+     A                                  8 14'      Date Math Demo      '
+     A                                      COLOR(TRQ)
+     A                                      DSPATR(UL)
+     A                                 10 14'Date:         '
+     A            DAT             L  B 10 29COLOR(WHT)
+     A                                      DATFMT(*JOB)
+     A            DATEF4         4A  B 10 40DSPATR(PR)
+     A                                      COLOR(BLU)
+     A                                      DFTVAL('(F4)')
+     A                                 11 14'Day of week:  '
+     A            DOWEEK         9A  O 11 29COLOR(WHT)
+     A                                 12 14'Day of Year:  '
+     A            JDAY            L  O 12 29COLOR(WHT)
+     A                                      DATFMT(*JUL)
+     A                                 13 14'End-of-month: '
+     A            EOM             L  O 13 29COLOR(WHT)
+     A                                      DATFMT(*JOB)
+     A                                 14 14'Last Friday:  '
+     A            LASTFRI         L  O 14 29COLOR(WHT)
+     A                                      DATFMT(*JOB)
+     A                                 15 14'Next Tuesday: '
+     A            NEXTTUE         L  O 15 29COLOR(WHT)
+     A                                      DATFMT(*JOB)
+     A            ADDDAYS        5Y 0B 16 19EDTCDE(N)
+     A            ADDSUB          L  O 16 30COLOR(WHT)
+     A                                      DATFMT(*JOB)
+     A                                 16 41'Add/Sub days:'
+     A                                 10 54'Century Date:'
+     A            CDAY          10A  O 10 68COLOR(WHT)
+     A                                 11 54'Regular Date:'
+     A            REGDATE       10A  O 11 68COLOR(WHT)
+     A                                 23  3'F3=Exit'
+     A                                      COLOR(BLU)
+     A                                 23 13'F4=Pop-up Calendar'
+     A                                      COLOR(BLU)

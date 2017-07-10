@@ -1,70 +1,71 @@
-000001170710      *  devops test
-000105170226                                            DSPSIZ(*DS3 *DS4)
-000109170226                                            ENTFLDATR(*NOCURSOR (*COLOR WHT))
-000110170226                                            CHGINPDFT
-000111170226                R FMT001
-000112170226        90                                  DSPMOD(*DS4)
-000113170226                                            CA03 CA12
-000114170226                                            RTNCSRLOC(&CSRRCD &CSRFLD)
-000115170226                                            OVERLAY
-000116170226                                            WINDOW(*DFT 9 21 *NOMSGLIN)
-000117170226                                            MOUBTN(*ULP ENTER)
-000118170226                  CSRRCD        10   H
-000119170226                  CSRFLD        10   H
-000120170226                  MONTHYEAR     18   O  1  4DSPATR(HI)
-000121170226                                        3  2'S' COLOR(RED)
-000122170226                                        3  5'M' COLOR(BLU)
-000123170226                                        3  8'T' COLOR(BLU)
-000124170226                                        3 11'W' COLOR(BLU)
-000125170226                                        3 14'T' COLOR(BLU)
-000126170226                                        3 17'F' COLOR(BLU)
-000127170226                                        3 20'S' COLOR(RED)
-000128170226                  DAY01          2I  B  4  1DSPATR(PR)
-000129170226                  DAY02          2I  B  4  4DSPATR(PR)
-000130170226                  DAY03          2I  B  4  7DSPATR(PR)
-000131170226                  DAY04          2I  B  4 10DSPATR(PR)
-000132170226                  DAY05          2I  B  4 13DSPATR(PR)
-000133170226                  DAY06          2I  B  4 16DSPATR(PR)
-000134170226                  DAY07          2I  B  4 19DSPATR(PR)
-000135170226                  DAY08          2I  B  5  1DSPATR(PR)
-000136170226                  DAY09          2I  B  5  4DSPATR(PR)
-000137170226                  DAY10          2I  B  5  7DSPATR(PR)
-000138170226                  DAY11          2I  B  5 10DSPATR(PR)
-000139170226                  DAY12          2I  B  5 13DSPATR(PR)
-000140170226                  DAY13          2I  B  5 16DSPATR(PR)
-000141170226                  DAY14          2I  B  5 19DSPATR(PR)
-000142170226                  DAY15          2I  B  6  1DSPATR(PR)
-000143170226                  DAY16          2I  B  6  4DSPATR(PR)
-000144170226                  DAY17          2I  B  6  7DSPATR(PR)
-000145170226                  DAY18          2I  B  6 10DSPATR(PR)
-000146170226                  DAY19          2I  B  6 13DSPATR(PR)
-000147170226                  DAY20          2I  B  6 16DSPATR(PR)
-000148170226                  DAY21          2I  B  6 19DSPATR(PR)
-000149170226                  DAY22          2I  B  7  1DSPATR(PR)
-000150170226                  DAY23          2I  B  7  4DSPATR(PR)
-000151170226                  DAY24          2I  B  7  7DSPATR(PR)
-000152170226                  DAY25          2I  B  7 10DSPATR(PR)
-000153170226                  DAY26          2I  B  7 13DSPATR(PR)
-000154170226                  DAY27          2I  B  7 16DSPATR(PR)
-000155170226                  DAY28          2I  B  7 19DSPATR(PR)
-000156170226                  DAY29          2I  B  8  1DSPATR(PR)
-000157170226                  DAY30          2I  B  8  4DSPATR(PR)
-000158170226                  DAY31          2I  B  8  7DSPATR(PR)
-000159170226                  DAY32          2I  B  8 10DSPATR(PR)
-000160170226                  DAY33          2I  B  8 13DSPATR(PR)
-000161170226                  DAY34          2I  B  8 16DSPATR(PR)
-000162170226                  DAY35          2I  B  8 19DSPATR(PR)
-000163170226                  DAY36          2I  B  9  1DSPATR(PR)
-000164170226                  DAY37          2I  B  9  4DSPATR(PR)
-000165170226                  DAY38          2I  B  9  7DSPATR(PR)
-000166170226                  PREVYEAR       2I  B  9 10COLOR(TRQ) DFTVAL('<<')
-000167170226                  PREVMONTH      2I  B  9 13COLOR(TRQ) DFTVAL(' <')
-000168170226                  NEXTMONTH      2I  B  9 16COLOR(TRQ) DFTVAL('> ') DSPATR(PC)
-000169170226                  NEXTYEAR       2I  B  9 19COLOR(TRQ) DFTVAL('>>')
-000170170226                R DUMMY
-000171170226                                            TEXT('Prevents Previous +
-000172170226                                            screen from being cleared')
-000173170226                                            ASSUME
-000174170226                                        5  9' '
-000175170226
-000176170226
+      * Demo
+
+                                            DSPSIZ(*DS3 *DS4)
+                                            ENTFLDATR(*NOCURSOR (*COLOR WHT))
+                                            CHGINPDFT
+                R FMT001
+        90                                  DSPMOD(*DS4)
+                                            CA03 CA12
+                                            RTNCSRLOC(&CSRRCD &CSRFLD)
+                                            OVERLAY
+                                            WINDOW(*DFT 9 21 *NOMSGLIN)
+                                            MOUBTN(*ULP ENTER)
+                  CSRRCD        10   H
+                  CSRFLD        10   H
+                  MONTHYEAR     18   O  1  4DSPATR(HI)
+                                        3  2'S' COLOR(RED)
+                                        3  5'M' COLOR(BLU)
+                                        3  8'T' COLOR(BLU)
+                                        3 11'W' COLOR(BLU)
+                                        3 14'T' COLOR(BLU)
+                                        3 17'F' COLOR(BLU)
+                                        3 20'S' COLOR(RED)
+                  DAY01          2I  B  4  1DSPATR(PR)
+                  DAY02          2I  B  4  4DSPATR(PR)
+                  DAY03          2I  B  4  7DSPATR(PR)
+                  DAY04          2I  B  4 10DSPATR(PR)
+                  DAY05          2I  B  4 13DSPATR(PR)
+                  DAY06          2I  B  4 16DSPATR(PR)
+                  DAY07          2I  B  4 19DSPATR(PR)
+                  DAY08          2I  B  5  1DSPATR(PR)
+                  DAY09          2I  B  5  4DSPATR(PR)
+                  DAY10          2I  B  5  7DSPATR(PR)
+                  DAY11          2I  B  5 10DSPATR(PR)
+                  DAY12          2I  B  5 13DSPATR(PR)
+                  DAY13          2I  B  5 16DSPATR(PR)
+                  DAY14          2I  B  5 19DSPATR(PR)
+                  DAY15          2I  B  6  1DSPATR(PR)
+                  DAY16          2I  B  6  4DSPATR(PR)
+                  DAY17          2I  B  6  7DSPATR(PR)
+                  DAY18          2I  B  6 10DSPATR(PR)
+                  DAY19          2I  B  6 13DSPATR(PR)
+                  DAY20          2I  B  6 16DSPATR(PR)
+                  DAY21          2I  B  6 19DSPATR(PR)
+                  DAY22          2I  B  7  1DSPATR(PR)
+                  DAY23          2I  B  7  4DSPATR(PR)
+                  DAY24          2I  B  7  7DSPATR(PR)
+                  DAY25          2I  B  7 10DSPATR(PR)
+                  DAY26          2I  B  7 13DSPATR(PR)
+                  DAY27          2I  B  7 16DSPATR(PR)
+                  DAY28          2I  B  7 19DSPATR(PR)
+                  DAY29          2I  B  8  1DSPATR(PR)
+                  DAY30          2I  B  8  4DSPATR(PR)
+                  DAY31          2I  B  8  7DSPATR(PR)
+                  DAY32          2I  B  8 10DSPATR(PR)
+                  DAY33          2I  B  8 13DSPATR(PR)
+                  DAY34          2I  B  8 16DSPATR(PR)
+                  DAY35          2I  B  8 19DSPATR(PR)
+                  DAY36          2I  B  9  1DSPATR(PR)
+                  DAY37          2I  B  9  4DSPATR(PR)
+                  DAY38          2I  B  9  7DSPATR(PR)
+                  PREVYEAR       2I  B  9 10COLOR(TRQ) DFTVAL('<<')
+                  PREVMONTH      2I  B  9 13COLOR(TRQ) DFTVAL(' <')
+                  NEXTMONTH      2I  B  9 16COLOR(TRQ) DFTVAL('> ') DSPATR(PC)
+                  NEXTYEAR       2I  B  9 19COLOR(TRQ) DFTVAL('>>')
+                R DUMMY
+                                            TEXT('Prevents Previous +
+                                            screen from being cleared')
+                                            ASSUME
+                                        5  9' '
+
+

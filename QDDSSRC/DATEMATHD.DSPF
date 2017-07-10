@@ -1,4 +1,5 @@
 000120170225     A*%%EC
+000121170710     A* DevOps Demo
 000130170225     A                                      DSPSIZ(24 80 *DS3)
 000140170225     A                                      CHGINPDFT(HI UL)
 000150170225     A                                      ERRSFL
@@ -6,7 +7,6 @@
 000170170225     A                                      CF04
 000180170225     A                                      MOUBTN(*ULD ENTER)
 000190170225     A          R FMT01
-000200170225     A*%%TS  SD  20170225  001003  MSODC       REL-V7R1M0  5770-WDS
 000210170225     A                                      RTNCSRLOC(&REC &FLD)
 000220170225     A            REC           10A  H
 000230170225     A            FLD           10A  H

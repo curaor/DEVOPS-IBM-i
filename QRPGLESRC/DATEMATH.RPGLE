@@ -1,7 +1,7 @@
 000100170225     H option(*nodebugio) dftactgrp(*no) actgrp(*new)
 000200170225     FDATEMATHD cf   e             workstn
 000300170225
-000400170707      *  ASCII art panel for heading. (Use a Figlet generator.) xxxx
+000400170707      *  ASCII art panel for heading. (Use a Figlet generator.)
 000500170225     D FIGLET          ds
 000600170225     D*Figar                         60    dim(6) ctdata perrcd(1)
 000700170225      * Constants
@@ -16,7 +16,7 @@
 001600170225
 001700170225      /FREE
 001800170225        //====================================================================*
-001900170225        // MAIN CALCULATIONS                                                  *
+001900170708        // MAIN CALCULATION                                                  *
 002000170225        //====================================================================*
 002100170225         // Loop until exit.
 002200170225         wS1Exit = *off;

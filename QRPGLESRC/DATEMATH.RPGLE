@@ -1,6 +1,6 @@
      H* DEMO
      H option(*nodebugio) dftactgrp(*no) actgrp(*new)
-     FDATEMATHD cf   e             workstn
+     FDATEMATD  cf   e             workstn
 
       *  ASCII art panel for heading. (Use a Figlet generator.)
      D FIGLET          ds

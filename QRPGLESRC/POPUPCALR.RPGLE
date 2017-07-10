@@ -1,7 +1,7 @@
   //***************************************************************
      H* DEMO
      H option(*nodebugio) dftactgrp(*no) actgrp(*caller)
-     FPOPUPCALD cf   e             workstn
+     FPOPUPCAD  cf   e             workstn
 
      d StartDate       s               d
      d wDate           s               d

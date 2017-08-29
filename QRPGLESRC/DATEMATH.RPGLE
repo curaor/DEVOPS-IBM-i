@@ -1,4 +1,4 @@
-     H* DEMO 1
+     H* DEMO 1 8/29
      H option(*nodebugio) dftactgrp(*no) actgrp(*new)
      FDATEMATD  cf   e             workstn
 

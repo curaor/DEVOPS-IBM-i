@@ -1,4 +1,4 @@
-     H* DEMO 1 8/29/2017 test
+     H* DEMO 1 8/29/2017 test1
      H option(*nodebugio) dftactgrp(*no) actgrp(*new)
      FDATEMATD  cf   e             workstn
 
